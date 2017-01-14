@@ -28,6 +28,19 @@ public class Constants {
     public static final int INCHES_PER_PULSE = 0;
   }
 
+  public static class Shooter {
+    public static final int FLY_WHEEL_PORT = 0;
+    public static final int INDEX_WHEEL_PORT = 0;
+  }
+
+  public static class Intake {
+    public static final int ROLLER_PORT = 0;
+  }
+
+  public static class Climber {
+    public static final int WINCH_PORT = 0;
+  }
+
   public static enum Direction {
     LEFT, RIGHT, DOWN, UP, FORWARD, BACKWARD;
   }
