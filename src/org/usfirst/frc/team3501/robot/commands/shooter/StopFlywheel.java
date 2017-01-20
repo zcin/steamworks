@@ -1,4 +1,4 @@
-package org.usfirst.frc.team3501.robot.commands.intake;
+package org.usfirst.frc.team3501.robot.commands.shooter;
 
 import org.usfirst.frc.team3501.robot.Robot;
 
@@ -7,12 +7,10 @@ import edu.wpi.first.wpilibj.command.Command;
 /**
  *
  */
-public class RunIntakeContinuous extends Command {
-  private double motorVal;
+public class StopFlywheel extends Command {
 
-  public RunIntakeContinuous(double motorVal) {
-    requires(Robot.getIntake());
-    this.motorVal = motorVal;
+  public StopFlywheel() {
+    requires(Robot.getShooter());
   }
 
   // Called just before this Command runs the first time
