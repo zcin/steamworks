@@ -4,7 +4,9 @@ import org.usfirst.frc.team3501.robot.Constants;
 
 import com.ctre.CANTalon;
 
-public class Intake {
+import edu.wpi.first.wpilibj.command.Subsystem;
+
+public class Intake extends Subsystem {
   private static Intake intake;
   private CANTalon intakeRoller;
 
@@ -17,5 +19,11 @@ public class Intake {
       intake = new Intake();
     }
     return intake;
+  }
+
+  @Override
+  protected void initDefaultCommand() {
+    // TODO Auto-generated method stub
+
   }
 }

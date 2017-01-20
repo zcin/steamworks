@@ -4,7 +4,9 @@ import org.usfirst.frc.team3501.robot.Constants;
 
 import com.ctre.CANTalon;
 
-public class Climber {
+import edu.wpi.first.wpilibj.command.Subsystem;
+
+public class Climber extends Subsystem {
   private static Climber climber;
   private CANTalon winch;
 
@@ -17,5 +19,11 @@ public class Climber {
       climber = new Climber();
     }
     return climber;
+  }
+
+  @Override
+  protected void initDefaultCommand() {
+    // TODO Auto-generated method stub
+
   }
 }

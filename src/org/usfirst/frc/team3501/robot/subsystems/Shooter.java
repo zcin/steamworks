@@ -4,7 +4,9 @@ import org.usfirst.frc.team3501.robot.Constants;
 
 import com.ctre.CANTalon;
 
-public class Shooter {
+import edu.wpi.first.wpilibj.command.Subsystem;
+
+public class Shooter extends Subsystem {
   private static Shooter shooter;
   private CANTalon flyWheel, indexWheel;
 
@@ -28,6 +30,12 @@ public class Shooter {
 
   public void runIndexwheel() {
     indexWheel.set(INDEX_SPEED);
+  }
+
+  @Override
+  protected void initDefaultCommand() {
+    // TODO Auto-generated method stub
+
   }
 
 }
